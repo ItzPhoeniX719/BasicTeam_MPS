@@ -30,11 +30,11 @@ pipeline {
 
         stage('Run container (test)') {
             when {
-                expression { false }
+                expression { true }
             }
             steps {
                 sh 'docker rm -f coinchanger || true'
-                sh "docker run -d -p 8080:8080 --name coinchanger ${IMAGE_NAME}"
+                sh "docker run -d -p 8080:8081 --name coinchanger ${IMAGE_NAME}"
             }
         }
     }
