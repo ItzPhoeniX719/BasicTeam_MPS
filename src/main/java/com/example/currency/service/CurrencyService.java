@@ -16,6 +16,7 @@ public class CurrencyService {
         ratesFromEur.put("USD", 1.08);
         ratesFromEur.put("GBP", 0.86);
         ratesFromEur.put("JPY", 170.0);
+        ratesFromEur.put("PESETAS", 166.386);
     }
 
     public double getRate(String from, String to) {

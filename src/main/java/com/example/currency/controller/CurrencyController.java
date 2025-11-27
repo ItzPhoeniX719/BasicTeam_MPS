@@ -44,7 +44,7 @@ public class CurrencyController {
                                      Double rate,
                                      Double result) {
 
-        List<String> currencies = Arrays.asList("EUR", "USD", "GBP", "JPY");
+        List<String> currencies = Arrays.asList("EUR", "USD", "GBP", "JPY", "PESETAS");
 
         model.addAttribute("currencies", currencies);
         model.addAttribute("amount", amount);

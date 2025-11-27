@@ -1,77 +1,74 @@
+/* Estilos generales para centrar y mejorar la tipografía */
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f7fb;
-    margin: 0;
-    padding: 0;
+    /* Define una fuente de letra agradable y de respaldo */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Color de fondo suave para la página */
+    background-color: #f4f4f9;
+    /* Asegura que la página ocupe al menos la altura de la ventana */
+    min-height: 100vh;
+    /* Utiliza flexbox para centrar el contenido vertical y horizontalmente */
+    display: flex;
+    justify-content: center; /* Centrado horizontal del contenido principal */
+    align-items: flex-start; /* Alinea el contenido al inicio, pero con margen */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding-top: 50px; /* Espacio en la parte superior */
 }
 
+/* Estilo para un contenedor principal, si lo tienes (ej: <div class="container">) */
 .container {
-    max-width: 480px;
-    margin: 80px auto;
-    background: #ffffff;
-    padding: 32px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    /* Ancho máximo para que no se extienda demasiado en pantallas grandes */
+    max-width: 800px;
+    /* Espacio interno para que el contenido no toque los bordes */
+    padding: 30px;
+    /* Fondo blanco para destacar el contenido */
+    background-color: #ffffff;
+    /* Sombra suave para darle profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Bordes ligeramente redondeados */
+    border-radius: 10px;
+    /* Centra todo el TEXTO dentro del contenedor */
+    text-align: center;
 }
 
+/* Mejorando el estilo de los encabezados (h1) */
 h1 {
-    text-align: center;
-    margin-bottom: 24px;
-    color: #222;
+    /* Un color más llamativo para el título */
+    color: #333366;
+    /* Más grande y con un poco de peso */
+    font-size: 2.5em;
+    /* Espacio debajo del título */
+    margin-bottom: 20px;
+    /* Pequeña línea divisoria debajo */
+    border-bottom: 2px solid #333366;
+    /* Espacio en la línea divisoria */
+    padding-bottom: 10px;
 }
 
-.converter-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+/* Mejorando el estilo de los párrafos (p) */
+p {
+    /* Color de texto más oscuro pero no completamente negro */
+    color: #555555;
+    /* Espaciado de línea más cómodo para la lectura */
+    line-height: 1.6;
+    /* Espacio debajo de cada párrafo */
+    margin-bottom: 15px;
+    /* Justifica o alinea a la izquierda si prefieres mejor lectura en bloques de texto */
+    /* text-align: left; */
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+/* Si tienes enlaces */
+a {
+    /* Color del enlace */
+    color: #007bff;
+    /* Quita el subrayado predeterminado */
+    text-decoration: none;
+    /* Transición suave para efectos hover */
+    transition: color 0.3s ease;
 }
 
-label {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-input[type="number"],
-select {
-    padding: 8px 10px;
-    border: 1px solid #d0d4e4;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-
-button {
-    margin-top: 8px;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    background: #2563eb;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: transform 0.05s ease, box-shadow 0.1s ease;
-}
-
-button:hover {
-    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.35);
-    transform: translateY(-1px);
-}
-
-.result {
-    margin-top: 24px;
-    padding: 16px;
-    border-radius: 8px;
-    background: #eff6ff;
-    border: 1px solid #bfdbfe;
-    text-align: center;
-}
-
-.result h2 {
-    margin: 8px 0 0;
-    color: #1d4ed8;
+a:hover {
+    /* Color más oscuro al pasar el ratón */
+    color: #0056b3;
+    /* Vuelve a poner el subrayado al pasar el ratón */
+    text-decoration: underline;
 }
