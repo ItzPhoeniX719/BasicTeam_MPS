@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/currency-converter-0.0.1-SNAPSHOT.jar app.jar
 
 # Puerto donde escucha Spring Boot
-EXPOSE 8080
+EXPOSE 8081
 
 # Comando para arrancar la aplicación
 ENTRYPOINT ["java", "-jar", "app.jar"]
